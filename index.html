@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> Sound controlled Animals </title>
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <center>
+            <div id="header_div">
+                <h1 id="title">Sound controlled Animals</h1>
+                <h3 id="title">Note PLay different sound like barking, meowing</h3>
+            </div>
+            <br>
+            <button id="start_btn" class="btn btn-info btn-lg" style="letter-spacing: 10px;"
+               onclick="startClassification()">
+               START
+            </button>
+            <br>
+            <div>
+                <h1 id="dog_voice">Detected dog- </h1>
+                <h1 id="cat_voice">Detected cat- </h1>
+            </div>
+            <div>
+                <h2 style="font-family: 'Courier New', Courier, monospace;" id="voice_detected"> Detected voice is of-</of-></h2>
+            <br>
+            <br>
+            <img src="ear.png" width="300px" height="370px" id="ear_img">
+            <br>
+            <div id="footer_div">
+                <h3 id="footer">Developed by- Mahii</h3>
+            </div>
+        </center> 
+        <script src="main.js"></script>
+    </body>
+</html>
